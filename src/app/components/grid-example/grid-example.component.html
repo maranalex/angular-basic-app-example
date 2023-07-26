@@ -1,0 +1,10 @@
+<h1>Grid Example</h1>
+<div class="grid__container">
+  <div id="gElement1" class="grid__element">Element1</div>
+  <div id="gElement2" class="grid__element">Element2</div>
+  <div id="gElement3" class="grid__element">Element3</div>
+  <div id="gElement4" class="grid__element">Element4</div>
+  <div *ngFor="let i of gridItems; let index = index" class="grid__element">
+    ArrElement{{ index }}
+  </div>
+</div>

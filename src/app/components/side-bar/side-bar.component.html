@@ -1,0 +1,17 @@
+<mat-button-toggle-group
+  vertical="true"
+  name="fontStyle"
+  class="side-bar-wrapper"
+  [value]="selectedRoute"
+  (change)="navigateToSubRoute($event)"
+>
+  <mat-button-toggle [value]="applicationRoutes.FLEX_EXAMPLE"
+    >Flex Example</mat-button-toggle
+  >
+  <mat-button-toggle [value]="applicationRoutes.GRID_EXAMPLE"
+    >Grid Example</mat-button-toggle
+  >
+  <mat-button-toggle [value]="applicationRoutes.CAT_BREEDS"
+    >Cat Breeds</mat-button-toggle
+  >
+</mat-button-toggle-group>

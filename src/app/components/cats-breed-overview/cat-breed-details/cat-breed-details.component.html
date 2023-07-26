@@ -1,0 +1,13 @@
+<div class="breed-details__wrapper">
+  <img class="breed-details__image" [src]="breed.image.url" />
+  <section class="breed-details__data">
+    <h3>Name: {{ breed.name }}</h3>
+    <i>About: {{ breed.description }}</i>
+
+    <ul>
+      <li>Adaptability: {{ breed.adaptability }}</li>
+      <li>Affection level:{{ breed.affection_level }}</li>
+      <li>Energy level: {{ breed.energy_level }}</li>
+    </ul>
+  </section>
+</div>

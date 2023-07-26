@@ -1,0 +1,11 @@
+<router-outlet *ngIf="breeds | async"></router-outlet>
+<div class="breeds-buttons-wrapper">
+  <button
+    *ngFor="let breed of breeds | async"
+    mat-flat-button
+    color="primary"
+    (click)="displayDetails(breed.id)"
+  >
+    {{ breed.name }}
+  </button>
+</div>

@@ -1,0 +1,9 @@
+.nav-bar-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  &__title {
+    margin: 0;
+    align-self: center;
+  }
+}

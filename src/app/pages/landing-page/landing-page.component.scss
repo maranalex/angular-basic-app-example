@@ -1,0 +1,32 @@
+:host {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr 7fr;
+  grid-template-rows: min-content 1fr min-content;
+  grid-template-areas:
+    "up up"
+    "left right"
+    "footer footer";
+}
+
+.navigation-bar {
+  grid-area: up;
+  border: solid 5px red;
+}
+
+.content-wrapper {
+  grid-area: right;
+  border: solid 5px yellow;
+  overflow-y: auto;
+}
+
+.side-bar {
+  grid-area: left;
+  border: solid 5px blue;
+}
+
+.footer {
+  grid-area: footer;
+  border: solid 5px green;
+  //display: none;
+}
